@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Illford Digital Marketing</title>
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/9fbca38443.js" crossorigin="anonymous"></script>
+
+    <!-- END -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- end -->
+</head>
+
+<!-- extra style -->
+<style>
+    /* select courses carousel start */
+
+.card-stack-carousel {
+ background: transparent;
+ width: 100%;
+ max-width: 100%;
+ max-height: 700px;
+ height: 100%;
+ transform-style: preserve-3d;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+
+.card-stack-carousel__indicators {
+ display: flex;
+ flex-direction: row;
+}
+
+.card-stack-carousel__indicators li {
+ list-style: none;
+ margin: 5px;
+}
+
+.card-stack-carousel__inner {
+ position: relative;
+ width: 100%;
+ height: 1000px;
+ margin-bottom: 20px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+.card-stack-carousel__card {
+ border-radius: 5px;
+ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+ overflow: hidden;
+ position: absolute;
+ width: 700px;
+ height: 400px;
+ transition: transform .3s ease-in, filter .2s ease-in;
+ cursor: pointer;
+ z-index: -3;
+ filter: blur(1px);
+}
+.card-stack-carousel__indicators li a{
+ text-decoration: none;
+ color: Tomato;
+}
+
+.card-stack-carousel__card img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.card-stack-carousel__card > div {
+ position: absolute;
+ top: 20px;
+ color: #fff;
+ left: 20px;
+}
+
+.active {
+ transform: translateX(0) scale(1.25);
+ z-index: 2;
+ filter: none;
+}
+
+.prev {
+ z-index: 1;
+ transform: translateX(-35%) scale(1);
+}
+
+.card-stack-carousel--vertical .prev {
+ transform: translateY(-17.5%) scale(1);
+}
+
+.next {
+ z-index: 0;
+ transform: translateX(35%) scale(1);
+}
+</style>
+<!-- end style -->
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/brand-white.png" alt="Illford Digital Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome To <span style="color: rgb(243, 187, 32)">ILLFORD</span> Digital</h1>
+            <p>Your Partner in Digital Marketing Solutions</p>
+            <a href="#" class="cta-button ">Learn More</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- <section class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <div class="service-icon">
+                <img src="service1.png" alt="Service 1">
+            </div>
+            <h3>Service 1</h3>
+            <p>Description of Service 1 goes here.</p>
+        </div>
+        <div class="service">
+            <div class="service-icon">
+                <img src="service2.png" alt="Service 2">
+            </div>
+            <h3>Service 2</h3>
+            <p>Description of Service 2 goes here.</p>
+        </div>
+        <div class="service">
+            <div class="service-icon">
+                <img src="service3.png" alt="Service 3">
+            </div>
+            <h3>Service 3</h3>
+            <p>Description of Service 3 goes here.</p>
+        </div> -->
+        <!-- Add more service items as needed -->
+    <!-- </section> -->
+
+    <!-- section1 -->
+    <section>
+        <h1 class="text-dark text-center mt-3">
+            OUR
+            <span style="color: Tomato">PROJECTS</span> 
+        </h1>
+        <P class="text-center">Over years, showcasing our commitment to
+            excellence and client satisfaction.</P>
+        <div class="card-stack-carousel" data-interval="false">
+            <div class="card-stack-carousel__inner">
+                <div class="card-stack-carousel__card active">
+                    <img src="https://i.postimg.cc/VkxjgLxC/html-css-collage-concept-with-hacker-23-2150061984.webp" alt="">
+                    <div class="mt-5" style="padding: 3%;">
+                        <h4 class="text-start text-white"> 2
+                            completed project</h4>
+                        <p class="text-start text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                            est pariatur sit itaque eos iusto repellat nemo incidunt aperiam
+                            dignissimos quasi dicta nulla quas, suscipit optio nam
+                            perferendis qui voluptatem?
+                        </p>
+                    </div>
+                </div>
+                <div class="card-stack-carousel__card">
+                    <img src="https://i.postimg.cc/F1t9q8ND/html-css-collage-concept-with-person-23-2150062008.webp" alt="">
+                    <div><h4 class="text-start text-white">5
+                        happy clients</h4></div>
+                </div>
+                <div class="card-stack-carousel__card">
+                    <img src="https://i.postimg.cc/056T4VF1/html-css-collage-concept-with-person-23-2150061967.webp" alt="">
+                    <div><h4 class="text-start text-white">897
+                        running project code hours</h4></div>
+                </div>
+                <div class="card-stack-carousel__card">
+                    <img src="https://i.postimg.cc/F1t9q8ND/html-css-collage-concept-with-person-23-2150062008.webp" alt="">
+                    <div><h4 class="text-start text-white"> 3
+                        years of experience</h4></div>
+                </div>
+                <div class="card-stack-carousel__card">
+                    <img src="https://i.postimg.cc/VkxjgLxC/html-css-collage-concept-with-hacker-23-2150061984.webp" alt="">
+                    <div><h4 class="text-start text-white"> 3
+                        years of experience</h4></div>
+                </div>
+                <div class="card-stack-carousel__card">
+                    <img src="https://i.postimg.cc/056T4VF1/html-css-collage-concept-with-person-23-2150061967.webp" alt="">
+                    <div><h4 class="text-start text-white">3
+                        years of experience</h4></div>
+                </div>
+            </div>
+            <ul class="card-stack-carousel__indicators">
+                <li><a href="#0">1</a></li>
+                <li><a href="#1">2</a></li>
+                <li><a href="#2">3</a></li>
+                <li><a href="#3">4</a></li>
+                <li><a href="#4">5</a></li>
+                <li><a href="#5">6</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- end section2 -->
+
+
+    <!-- section 2 -->
+    <section class="course-details-section container my-5">
+        <h1 class="text-dark text-center mt-3">
+            OUR AWESOME 
+            <span style="color: Tomato">SERVICES</span> 
+        </h1>
+
+        <div class="row p-3 justify-content-center align-items-stretch">
+            <div class="col-lg-4 p-3 col-md-5">
+                <div class="card w-100 card-height">
+                    <div class="card-body h-100 d-flex flex-column">
+                        <h3 class="card-subtitle mb-2">
+                            <a class="course-icon" href=""><i style="color: Tomato;" class="fa-solid fa-laptop-code"></i></a>
+                        </h3>
+                        <h4 class="card-title">Web Development</h4>
+
+                        <p class="card-text">
+                            At Illford, we specialize in creating exceptional web solutions that drive results. Our dedicated team of web developers combines creativity, technical expertise, design thinking, and strategic thinking to deliver websites that engage, captivate, and convert visitors into loyal customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 col-md-5">
+                <div class="card w-100 card-height">
+                    <div class="card-body h-100 d-flex flex-column">
+                        <h3 class="card-subtitle mb-2">
+                            <a class="course-icon" href=""><i style="color: Tomato;" class="fa-solid fa-sliders fa-rotate-90"></i></a>
+                        </h3>
+                        <h4 class="card-title">Content Development</h4>
+
+                        <p class="card-text">
+                            Your digital presence is more than just a website; it's a storytelling platform that speaks volumes about your brand, values, and expertise. At Illford, we understand the power of compelling content in capturing attention, driving engagement, and ultimately converting visitors into loyal customers..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 col-md-5">
+                <div class="card w-100 card-height">
+                    <div class="card-body h-100 d-flex flex-column">
+                        <h3 class="card-subtitle mb-2">
+                            <a class="course-icon" href=""><i style="color: Tomato;" class="fa-solid fa-hand"></i></a>
+                        </h3>
+                        <h4 class="card-title">Digital Branding</h4>
+
+                        <p class="card-text">
+                            In the rapidly evolving digital landscape, establishing a strong brand identity is paramount to capturing the attention of your target audience and staying ahead of the competition. At Illford, we specialize in crafting unique and impactful digital branding strategies that resonate with your audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 col-md-5">
+                <div class="card w-100 card-height">
+                    <div class="card-body h-100 d-flex flex-column">
+                        <h3 class="card-subtitle mb-2">
+                            <a class="course-icon" href=""><i style="color: Tomato;" class="fa-solid fa-magnifying-glass"></i></a>
+                        </h3>
+                        <h4 class="card-title">SEO</h4>
+
+                        <p class="card-text">
+                            At Illford, we specialize in driving organic traffic and enhancing online visibility through strategic Search Engine Optimization (SEO) services. Our team of seasoned SEO experts is committed to helping your business achieve higher rankings on search engine result pages (SERPs) and attract more qualified leads.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 col-md-5">
+                <div class="card w-100 card-height">
+                    <div class="card-body h-100 d-flex flex-column">
+                        <h3 class="card-subtitle mb-2">
+                            <a class="course-icon" href=""><i style="color: Tomato;" class="fa-solid fa-coins"></i></a>
+                        </h3>
+                        <h4 class="card-title">PPC</h4>
+
+                        <p class="card-text">
+                            At Illford, we offer comprehensive Pay-Per-Click (PPC) services that drive targeted traffic and maximize your ROI. Our expert team leverages industry insights, data-driven strategies, and cutting-edge tools to craft custom PPC campaigns tailored to your unique business goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 col-md-5">
+                <div class="card w-100 card-height">
+                    <div class="card-body h-100 d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="card-title text-center">
+                            <a href="" style="text-decoration: none; color: rgb(77, 75, 75)">Suggest Feature Request</a>
+                        </h5>
+
+                        <p class="text-center mt-2" style="font-size: xx-large;">
+                            <a style="text-decoration: none; color: black;" href=""><i style="color: Tomato;" class="fa-plus fa-2xl"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- section3 -->
+
+    <section class="about">
+        
+        <div class="about-content">
+
+            <div class="about-text">
+                <div>
+                    <h2 class="text-center">About Us</h2>
+            
+                  </div>
+                <p class="text-center p-4">
+                We are a dedicated team of digital marketing experts, helping businesses thrive in the online world.We're a team of digital enthusiasts dedicated to boost your online presence.
+                We focus on creativity and innovation to be your trusted partners in achieving digital success.Let's work together to make your brand thrive and grow in the ever changing digital world.
+                We build high-performance, aesthetically attractive websites that leave a lasting impact on your audience as a full-service web development business.Since our websites are responsive, users will get a consistent experience across all devices. 
+                </p>
+                <div class="hero-content">
+                    <a href="#" class="cta-button ">About Us</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/about.png" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need our services, please contact us on.  <i class="fa-brands fa-instagram"></i> 
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </p>
+
+    </section>
+    <!-- end section -->
+
+    <footer>
+        <div class="footer-logo">
+            <img src="images/brand.png" alt="Illford Digital Logo">
+            <p>&copy; 2023 Illford Digital Marketing</p>
+        </div>
+        
+    </footer>
+</body>
+
+<!-- script for style -->
+<script>
+    const cardCarousels = document.querySelectorAll('.card-stack-carousel');
+
+cardCarousels.forEach(function (cardCarousel) {
+  
+  // Carousel Variables
+  let cardCollection = cardCarousel.querySelectorAll('.card-stack-carousel__card');
+  let cardCollectionSize = cardCollection.length - 1;
+  let carouselIndicators = cardCarousel.querySelectorAll('.card-stack-carousel__indicators li');
+  let cardObject
+  
+  // Add Event Listener for Carousel Indicators
+  carouselIndicators.forEach(function (indicator, index) {
+    indicator.addEventListener('click', function (e) {
+      cardObject = cardCarousel.getElementsByClassName('card-stack-carousel__card').item(index);
+      clearCardStackCarousel(cardCollection);
+      initCardStackCarousel(cardObject, cardCollection, cardCollectionSize, index);
+    });
+  });
+  
+  // Add Event Listener for Card Click
+  cardCollection.forEach(function (card, index) {
+    cardObject = card;
+    // Initialize carousel
+    if(card.classList.contains('active') && !card.parentNode.classList.contains('initialized')) {
+      initCardStackCarousel(cardObject, cardCollection, cardCollectionSize, index);
+      card.parentNode.classList.add('initialized');
+    }
+    card.addEventListener('click', function (event) {
+      clearCardStackCarousel(cardCollection);
+      initCardStackCarousel(cardObject, cardCollection, cardCollectionSize, index);
+    });
+  });
+  
+  // Automatically loop through cards
+  if(cardCarousel.getAttribute("data-interval") == 'true') {
+    window.setInterval(nextCard, 6000);
+  }
+  
+  // Clear classes
+  function clearCardStackCarousel() {
+    cardCollection.forEach(function (card) {
+      card.classList.remove('active', 'prev', 'next', 'first', 'last');
+    });
+  }
+  
+  // Initialize carousel
+  function initCardStackCarousel(cardObject, cardCollection, cardCollectionSize, index) {
+    
+      cardCarousel.getElementsByClassName('card-stack-carousel__card').item(index).classList.add('active');
+    
+      // Previous
+      if(index == 0) {
+        cardCollection[cardCollectionSize].classList.add('prev');
+        if(cardCollectionSize > 4) {
+          cardCollection[cardCollectionSize - 1].classList.add('first');
+        }
+      } else {
+        cardCollection[index - 1].classList.add('prev');
+        if(cardCollectionSize > 4) {
+          if(index - 1 == 0) {
+            cardCollection[cardCollectionSize].classList.add('first');
+          } else {
+            cardCollection[index - 2].classList.add('first');
+          }
+        }
+      }
+    
+      // Next
+      if(index == cardCollectionSize) {
+        cardCollection[0].classList.add('next');
+        if(cardCollectionSize > 4) {
+          cardCollection[1].classList.add('last');
+        }
+      } else {
+        cardCollection[index + 1].classList.add('next');
+        if(cardCollectionSize > 4) {
+          if(index + 1 == cardCollectionSize) {
+            cardCollection[0].classList.add('last');
+          } else {
+            cardCollection[index + 2].classList.add('last');
+          }
+        }
+      }
+  }
+  
+  // Next click
+  function nextCard() {
+    cardCarousel.querySelector('.card-stack-carousel__card.next').click();
+  }
+  // Prev click
+  function prevCard() {
+    cardCarousel.querySelector('.card-stack-carousel__card.prev').click();
+  }
+  
+});
+</script>
+<!-- end script -->
+</html>
